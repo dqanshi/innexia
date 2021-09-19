@@ -75,24 +75,20 @@ def get_readable_time(seconds: int) -> str:
 INNEXIA_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` **INNEXIA** `your group super bot`
+`Heya` 🤗 `I am` **ANGEL** `your group super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help_back"),
-        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ", url=f"https://github.com/dqanshi/innexia"
+            text="✨Help ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="💫Support", url=f"https://t.me/BlazingSquad"
     ],
     [
-        InlineKeyboardButton(text="📜 Aʙᴏᴜᴛ", callback_data="innexia_"),
+        InlineKeyboardButton(text="Bᴀꜱɪᴄ Hᴇʟᴘ ", callback_data="innexia_basichelp"),
         InlineKeyboardButton(
-            text="Bᴀꜱɪᴄ Hᴇʟᴘ 👮", callback_data="innexia_basichelp"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/Innexiabot?startgroup=true"),
+            text="⚡Add Me",url="t.me/{}?startgroup=true".format(bot.username)),
     ],
 ]
 
@@ -362,10 +358,10 @@ def innexia_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="t.me/am_fan"
+                            text="Bᴜɢ'ꜱ", url="t.me/am_dq_fan"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/"
+                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/kittumkittum"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="innexia_back")],
@@ -386,7 +382,7 @@ def innexia_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@InnexiaBot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@am_dq_fan` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -466,8 +462,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *Innexia*
-                 \nHere is the [🔥Source Code🔥](https://github.com/DarkCybers/innexiaBot) .""",
+            text=""" Hi..😻 I'm *ANGEL*
+                 \nHere is the [🔥Source Code🔥](T.ME/kittumkittum) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
