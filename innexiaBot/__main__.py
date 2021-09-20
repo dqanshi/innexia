@@ -83,7 +83,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text="✨Help ❔", callback_data="help_back"),
-        InlineKeyboardButton(text="💫Support", url=f"https://t.me/BlazingSquad"
+        InlineKeyboardButton(text="💫owner", url=f"https://t.me/am_dq_fan"), 
     ],
     [
         InlineKeyboardButton(text="Bᴀꜱɪᴄ Hᴇʟᴘ ", callback_data="innexia_basichelp"),
